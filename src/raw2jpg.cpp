@@ -72,17 +72,6 @@ static std::vector<uint8_t> loadRawRgb16(const char* fileName, int width, int he
     return raw;
 }
 
-static void resize(uint8_t* dst, int dstWidth, int dstHeight, const uint8_t* src, int srcWidth, int srcHeight)
-{
-    for (int i = 0; i < dstHeight; i++)
-    {
-        for (int j = 0; j < dstWidth; j++)
-        {
-
-        }
-    }
-}
-
 static void fwrite_wrapper(void* context, void* data, int size) { fwrite(data, 1, size, reinterpret_cast<FILE*>(context)); }
 
 int main(int argc, char* argv[])
