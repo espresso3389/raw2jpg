@@ -1,5 +1,10 @@
 // clang++ -o2 --std=c++14 raw2jpg.cpp
 // cl /Ox /MD /EHsc raw2jpg.cpp
+
+#if defined(_WIN32)
+#define _CRT_SECURE_NO_WARNINGS
+#endif
+
 #include <cstdio>
 #include <cstdint>
 #include <vector>
